@@ -1,0 +1,96 @@
+*/{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    
+  }
+  a{
+    color: #003138;
+    text-decoration: none;
+  }
+ 
+ 
+  .ul{
+    display: flex;
+    flex-direction: row;
+    list-style:none;
+    line-height: 2;
+    }
+  .nav-link{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      padding-right: 4vw;
+      font-size: 20px;
+  }
+  
+  #container{
+    display: flex;
+    flex-direction: column;
+  }
+  #header{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    width: 100%;
+    height: 40px;
+    font-family: ailerons, helvetica;
+    color: #003138;
+    align-items: flex-end;
+    background-color: #c1ba3e;
+    overflow: visible;
+    position: fixed;
+    top: 0;
+  }
+  #nav-bar{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    #ms{
+        margin-left:15px;
+        font-weight: bold;
+    }
+  #main{
+      display: flex;
+      flex-direction: column;
+  }
+  #home{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100vh;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-image: url(/images/2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+  }
+  #msd{
+      background-color: rgba(107, 105, 126, 0.795);
+      font-family: ailerons, helvetica;
+        color: white;
+        text-align: right;
+        font-size: 60px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+#developer{
+    font-family: ailerons, helvetica;
+    color: white;
+    text-align: right;
+    font-size: 40px;
+    padding-right: 10px;
+    
+}
+#about-me{
+  display: flex;
+  flex-direction: column;
+}
+

@@ -6,19 +6,29 @@ body{
     margin: 0;
     padding: 0;
     align-items: center;
+    font-size: 25px;
     
   }
   a{
     color: #003138;
     text-decoration: none;
   }
- 
+ h2{
+  font-family: ailerons, helvetica;
+  color: #003138;
+  font-size: 1.5em;
+ }
+ h3{
+  font-family: ailerons, helvetica;
+  color: white;
+  
+ }
  
   .ul{
     display: flex;
     flex-direction: row;
     list-style:none;
-    line-height: 2;
+    line-height: 2.8;
     }
   .nav-link{
       display: flex;
@@ -92,5 +102,33 @@ body{
 #about-me{
   display: flex;
   flex-direction: column;
+  flex-wrap:nowrap;
+  color: #003138;
+
+}
+.about{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin: auto;
+  padding-top:10vh;
+  padding-bottom: 10vh;
+}
+.skill{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin:0;
+  background-color: #003138 ;
+  padding-top:20vh;
+  padding-bottom: 20vh;
+  
+}
+.icon{
+  display: flex;
+  justify-content:center;
+  color: aliceblue;
+  
 }
 

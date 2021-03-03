@@ -128,8 +128,6 @@ body{
   justify-content: space-around;
   padding-top:15vh;
   background-color: #003138 ;
-  
-  
 }
 .each-skill{
   display: flex;
@@ -195,7 +193,7 @@ input[type='checkbox'] { display: none; }
 
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
-  padding: .5rem 1rem;
+  padding: .5rem 1rem;  
 }
 .collapsible-content {
   display: flex;
@@ -203,6 +201,8 @@ input[type='checkbox'] { display: none; }
   max-height: 0px;
   overflow: hidden;
   font-size: 18px;
+  border: 12px #003138 solid;
+  
 
   transition: max-height .25s ease-in-out;
 }
@@ -252,11 +252,33 @@ input[type='checkbox'] { display: none; }
 .lead {width: 80%; background-color: #003138;}
 .com {width: 90%; background-color: #003138;}
 
+/* projects grid*/
+
+.project{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content:space-evenly;
+}
 .grid{
   display: grid;
-  grid-template-columns: calc(50%-6vw) calc(50%-6vw);
-  grid-template-rows: 30vh 30vh;
-  grid-gap: 3vw;
-  justify-items: center;
-  align-items: baseline;
+  grid-template-columns: 45% 45%;
+  grid-template-rows: 55vh 55vh;
+  justify-content: center;
+  gap: 3.2vw;
+  padding-top: 6vh;
+  padding-bottom: 6vh;
+}
+.each-project{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 1vw;
+  margin: 0;
+  background-color: #f8f1c1 ;
+  border: 12px #003138 solid;
+  border-radius: 12px;
+
+
 }

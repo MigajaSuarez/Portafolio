@@ -1,59 +1,148 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/style.css">
-  <title>Document</title>
-</head>
-<body>
-  <div id="container">
-        <header id="header">
-          <nav id="nav-bar">
-            <h2 id="ms">MS</h2>
-              <ul class="ul">
-                <li><a class="nav-link" href="#home">Home</a></li>
-                <li><a class="nav-link" href="#about-me">About me</a></li>
-                <li><a class="nav-link" href="#contact">Contact</a></li>
-              </ul>
-          </nav>
-          
-          
-      </header>
-      <main id="main">
-        <div id="home">
-          <div>
-            <h1 id="msd">Miguel Suarez</h1>
-            <h2 id="developer">Developer</h2>
-          </div>
-          
-        </div>
-        <div id="about-me">
-          <div class="about">
-            <h2>About me</h2>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptate commodi tempore modi laboriosam inventore, obcaecati laudantium ratione repudiandae dolor provident corrupti iste quasi a rerum ullam reprehenderit saepe quam!</p>
-          </div>
-          <div class="skill" >
-            <div class="icon">
-              <img class="icon" src="/icons/Recurso 2.png" alt="Education icon">
-              <h3>Education</h3>
-            </div>
-            <div class="icon" >
-              <img class="icon" src="/icons/Recurso 1.png" alt="Programing Skills">
-              <h3>Developing <br> Skills</h3>
-            </div>
-            <div class="icon">
-              <img  src="/icons/Recurso 3.png" alt="Profesional skills">
-              <h3>Profesional <br> Skills</h3>
-            </div>
-          </div>
-        </div>
-      </main>
-      
-  </div>
-  
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <script type='text/javascript' src='script.js'></script>
+    <title>Document</title>
+    
+  </head>
 
-  
-</body>
-</html>
+  <body>
+    <div id="container">
+          <header id="header">
+            <nav id="nav-bar">
+              <h2 id="ms">MS</h2>
+                <ul class="ul">
+                  <li><a class="nav-link" href="#home">Home</a></li>
+                  <li><a class="nav-link" href="#about-me">About me</a></li>
+                  <li><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+            
+        </header>
+        <main id="main">
+          <div id="home">
+            <div>
+              <h1 id="msd">Miguel Suarez</h1>
+              <h2 id="developer">Developer</h2>
+            </div>
+            
+          </div>
+          <div id="about-me">
+            <div class="about">
+              <h2>About me</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptate commodi tempore modi laboriosam inventore, obcaecati laudantium ratione repudiandae dolor provident corrupti iste quasi a rerum ullam reprehenderit saepe quam!</p>
+            </div>
+            <div class="skill" >
+              <div class="each-skill">
+                <img class="icon" src="/icons/Recurso 2.png" alt="Education icon">
+                <h3>Education</h3><br>
+              </div>
+              <div class="each-skill" >
+                
+                <img class="icon" src="/icons/Recurso 1.png" alt="Programing Skills">
+                <h3>Developing <br> Skills</h3>
+                
+              </div>
+              <div class="each-skill">
+                <img class="icon" src="/icons/Recurso 3.png" alt="Profesional skills">
+                <h3>Profesional <br> Skills</h3>
+              </div>
+            </div>
+            <div class="wrap-collabsible">
+              <input id="collapsible" class="toggle" type="checkbox">
+              <label for="collapsible" class="lbl-toggle">More Info</label>
+              <div class="collapsible-content">
+                <div class="content-inner">
+                  <p>
+                      <strong style="font-size:20px;">JavaScript Algorithms and data Structures</strong><br>Certification (300h)<br>freeCodeCamp <br>2021 <br><br>
+                      <strong style="font-size:20px;">Responsive Web Design</strong><br>Certificacion (300h) <br>freeCodeCamp <br>2021 <br> <br>
+                      <strong style="font-size:20px;">Internal Auditor/HSE RUC</strong><br> Certification (600h) <br>Consejo Colombiano de Seguridad <br>2018 <br><br>
+                      <strong style="font-size:20px;">Mechanical Engineer</strong><br> Bachelor Degree <br>Universidad de los Andes <br>2015
+                  </p>
+                </div>
+                  <div class="content-inner">
+                    <p>HTML</p>
+                    <div class="prog-skills">
+                    <div class="skills html">70%</div>
+                  </div>
+                  <p>CSS</p>
+                    <div class="prog-skills">
+                    <div class="skills css">80%</div>
+                  </div>
+                  <p>JS</p>
+                    <div class="prog-skills">
+                    <div class="skills js">90%</div>
+                  </div>
+                  <p>ANGULAR</p>
+                    <div class="prog-skills">
+                    <div class="skills ang">70%</div>
+                  </div>
+                  <p>BOOTSTRAP</p>
+                    <div class="prog-skills">
+                    <div class="skills php">60%</div>
+                  </div>
+                  <p>GIT</p>
+                    <div class="prog-skills">
+                    <div class="skills git">50%</div>
+                  </div>
+                  
+                </div>
+                <div class="content-inner">
+                  <p>Team Work</p>
+                    <div class="prog-skills">
+                    <div class="skills tw"></div>
+                  </div>
+                  <p>Problem Solving</p>
+                    <div class="prog-skills">
+                    <div class="skills ps"></div>
+                  </div>
+                  <p>Planing</p>
+                    <div class="prog-skills">
+                    <div class="skills pl"></div>
+                  </div>
+                  <p>Adaptability</p>
+                    <div class="prog-skills">
+                    <div class="skills ad"></div>
+                  </div>
+                  <p>Leadership</p>
+                    <div class="prog-skills">
+                    <div class="skills lead"></div>
+                  </div>
+                  <p>Comunication</p>
+                    <div class="prog-skills">
+                    <div class="skills com"></div>
+                  </div>
+                  <p>Multilingual (Spanish-English-German)</p>
+                    <div class="prog-skills">
+                    <div class="skills com"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+          </div>
+          <div>
+            <div class="about">
+              <div class="grid">
+                <div id="grid-item1">1</div>
+                <div id="grid-item2">2</div>
+                <div id="grid-item3">3</div>
+                <div id="grid-item4">4</div>
+
+              </div>
+
+            </div>
+          </div>
+          
+        </main>
+        
+    </div>
+  </body>
+  </html>

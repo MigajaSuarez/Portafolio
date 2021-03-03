@@ -6,7 +6,8 @@ body{
     margin: 0;
     padding: 0;
     align-items: center;
-    font-size: 25px;
+    font-size: 20px;
+    font-family: helvetica,serif;
     
   }
   a{
@@ -14,13 +15,15 @@ body{
     text-decoration: none;
   }
  h2{
-  font-family: ailerons, helvetica;
+  font-family: Audiowide, helvetica;
   color: #003138;
   font-size: 1.5em;
  }
  h3{
-  font-family: ailerons, helvetica;
+  font-family: Audiowide, helvetica;
   color: white;
+  font-size: 1.8em;
+  font-weight: lighter;
   
  }
  
@@ -48,10 +51,10 @@ body{
     justify-content:center;
     width: 100%;
     height: 40px;
-    font-family: ailerons, helvetica;
+    font-family: Audiowide, helvetica;
     color: #003138;
     align-items: flex-end;
-    background-color: #c1ba3e;
+    background-color: #e7e04d;
     overflow: visible;
     position: fixed;
     top: 0;
@@ -84,19 +87,22 @@ body{
   }
   #msd{
       background-color: rgba(107, 105, 126, 0.795);
-      font-family: ailerons, helvetica;
+      font-family: Audiowide, helvetica;
         color: white;
         text-align: right;
         font-size: 60px;
         padding-right: 10px;
         padding-left: 10px;
+        font-weight: lighter;
+        
     }
 #developer{
-    font-family: ailerons, helvetica;
+    font-family: Audiowide, helvetica;
     color: white;
     text-align: right;
     font-size: 40px;
     padding-right: 10px;
+    font-weight: lighter;
     
 }
 #about-me{
@@ -119,16 +125,136 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin:0;
+  padding-top:15vh;
   background-color: #003138 ;
-  padding-top:20vh;
-  padding-bottom: 20vh;
+  
+  
+}
+.each-skill{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  width:220px;
   
 }
 .icon{
-  display: flex;
-  justify-content:center;
-  color: aliceblue;
+  max-height: 100px ;
+  margin: auto;
   
 }
+.col{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 4vh;
+  background-color: #003138 ;
 
+}
+.grid{
+  display: grid;
+  grid-template-columns: calc(50%-6vw) calc(50%-6vw);
+  grid-template-rows: 30vh 30vh;
+  grid-gap: 3vw;
+  justify-items: center;
+  align-items: baseline;
+}
+input[type='checkbox'] { display: none; } 
+.lbl-toggle {
+  display: block;
+
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-align: center;
+
+  padding: 1rem;
+
+  color: white;
+  background: #003138;
+  cursor: pointer;
+  transition: all 0.25s ease-out;
+}
+
+.lbl-toggle:hover {
+  color: white;
+}
+.lbl-toggle::before {
+  content: ' ';
+  display: inline-block;
+
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid currentColor;
+
+  vertical-align: middle;
+  margin-right: .7rem;
+  transform: translateY(-2px);
+
+  transition: transform .2s ease-out;
+}
+.collapsible-content .content-inner {
+  background: rgba(250, 224, 66, .2);
+  border-bottom: 1px solid rgba(250, 224, 66, .45);
+
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding: .5rem 1rem;
+}
+.collapsible-content {
+  display: flex;
+  justify-content: space-around;
+  max-height: 0px;
+  overflow: hidden;
+  font-size: 18px;
+
+  transition: max-height .25s ease-in-out;
+}
+.toggle:checked + .lbl-toggle + .collapsible-content {
+  max-height: 100vh;
+}
+.toggle:checked + .lbl-toggle::before {
+  transform: rotate(90deg) translateX(-3px);
+}
+
+.toggle:checked + .lbl-toggle {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.content-inner{
+  display: block;
+  width: 33%;
+
+}
+/* skill bars*/
+/* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.prog-skills {
+  width: 100%; /* Full width */
+  background-color: #ddd; /* Grey background */
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
+}
+
+.html {width: 70%; background-color: #4CAF50;} /* Green */
+.css {width: 80%; background-color: #2196F3;} /* Blue */
+.js {width: 90%; background-color: #f0db4f;} /* Red */
+.php {width: 60%; background-color: #563d7c;} /* Dark Grey */
+.ang {width: 70%; background-color: #f44336;} 
+.git {width: 50%; background-color: #f1502f;}
+
+
+.tw {width: 90%; background-color: #003138;} /* Green */
+.ps {width: 100%; background-color: #003138;} /* Blue */
+.pl {width: 80%; background-color: #003138;} /* Red */
+.ad {width: 80%; background-color: #003138;} /* Dark Grey */
+.lead {width: 80%; background-color: #003138;}
+.com {width: 90%; background-color: #003138;}

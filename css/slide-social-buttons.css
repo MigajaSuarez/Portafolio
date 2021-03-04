@@ -1,0 +1,43 @@
+
+.slide-social{
+    display: flex;
+    justify-content: space-around;
+   
+    
+}
+
+
+
+.ss-icon{
+    margin:auto;
+    text-align: center;
+    color: #FFF;
+    display: block;
+    font-size: 1.5em;
+    height: 1em;
+    font-family: 'Poppins';
+    
+   
+}
+
+.ss-icon i{
+   
+    color: #FFF;
+    display: block;
+    font-size: 1.5em;
+    height: 1em;
+    
+    
+}
+
+
+@media only screen and (max-width : 30em) { /* 480px/16px = 30em */
+
+    .slide-social{
+        width: 100%;
+    }
+
+    .slide-social .ss-button{
+        left: 50%;
+    }
+}
